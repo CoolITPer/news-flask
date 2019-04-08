@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post">
+    {{ form.csrf_token }}
+    <p>作者：{{ form.au_info }}</p>
+    <p>书名：{{ form.bk_info }}</p>
+    <p>{{ form.submit }}</p>
+</form>
+
+</body>
+</html>

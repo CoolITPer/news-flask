@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+我的模板2中的html内容
+<br/>{{ my_str }}
+<br/>{{ my_int }}
+<br/>{{ my_array }}
+<br/>{{ my_dict }}
+<br/> my_int + 10 的和为：{{ my_int + 10 }}
+<br/> my_int + my_array第0个值的和为：{{ my_int + my_array[0] }}
+<br/> my_array 第0个值为：{{ my_array[0] }}
+<br/> my_array 第1个值为：{{ my_array.1 }}
+<br/> my_dict 中 name 的值为：{{ my_dict['name'] }}
+<br/> my_dict 中 age 的值为：{{ my_dict.age }}
+<h3>----------过滤器的作用-----------</h3>
+{{ "hello world" | reverse | upper }}
+<!--把变量值的首字母转成大写，其余字母转小写-->
+<p>{{ 'hello' | capitalize }}</p>
+<!--把值转成小写-->
+<p>{{ 'HELLO' | lower }}</p>
+<!--把变量值转成大写-->
+<p>{{ 'hello' | upper }}</p>
+<p>{{ 'hello this is my trying' | title }}</p>
+<!--字符串反转-->
+<p>{{ 'olleh' | reverse }}</p>
+<!--格式化输出-->
+<p>{{ '%s is %d' | format('name',17) }}</p>
+<h3>-------------列表操作--------------</h3>
+<!--取列表第一个参数-->
+<p>{{ [1,2,3,4,5,6] | first }}</p>
+<!--取列表最后一个参数-->
+<p>{{ [1,2,3,4,5,6] | last }}</p>
+<!--取列表长度-->
+<p>{{ [1,2,3,4,5,6] | length }}</p>
+<!--取列表和-->
+<p>{{ [1,2,3,4,5,6] | sum }}</p>
+<!--列表排序-->
+<p>{{ [6,2,3,1,5,4] | sort }}</p>
+<!--{% filter upper %}
+    #一大堆文字#
+{% endfilter %}-->
+<!-------------自定义选择器------------------->
+<br>my_array:{{my_array}}
+<br>my_array反转后:{{my_array|lireverse}}
+
+</body>
+</html>
