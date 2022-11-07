@@ -35,12 +35,12 @@ python-editor==1.0.3
 qiniu==7.2.0
 redis==2.10.6
 redis-py-cluster==1.3.4
-requests==2.18.4
+requests==2.20
 simplegeneric==0.8.1
 six==1.11.0
 SQLAlchemy==1.2.6
 traitlets==4.3.2
-urllib3==1.22
+urllib3==1.26.5
 wcwidth==0.1.7
 Werkzeug==0.14.1
 WTForms==2.1
