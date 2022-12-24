@@ -44,3 +44,4 @@ urllib3==1.22
 wcwidth==0.1.7
 Werkzeug==0.14.1
 WTForms==2.1
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
